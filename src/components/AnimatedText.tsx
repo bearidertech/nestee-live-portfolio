@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import { ReactNode } from "react";
 
 interface AnimatedTextProps {
-  text: string;
+  text: string | ReactNode;
   delay?: number;
   className?: string;
 }
