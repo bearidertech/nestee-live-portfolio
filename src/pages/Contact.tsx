@@ -47,42 +47,42 @@ const Contact = () => {
           <div className="absolute -bottom-40 right-1/3 w-80 h-80 bg-[#AEBED9]/10 rounded-full blur-3xl animate-pulse delay-2000" />
         </div>
 
-        <div className="relative max-w-3xl mx-auto space-y-12 z-10">
+        <div className="relative max-w-3xl mx-auto space-y-8 md:space-y-12 z-10">
           {/* Header Section */}
-          <div className="text-center space-y-4 animate-fade-in">
-            <h1 className="text-4xl font-bold text-[#FAF9F6]">Contact Me</h1>
-            <p className="text-[#FFFFFF] text-lg">
+          <div className="text-center space-y-3 md:space-y-4 animate-fade-in">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FAF9F6]">Contact Me</h1>
+            <p className="text-base md:text-lg text-[#FFFFFF] max-w-2xl mx-auto px-4">
               Let's work together. Feel free to send a message or call directly—I'm ready to collaborate.
             </p>
           </div>
 
           {/* Contact Information */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left animate-fade-in">
-            <div className="space-y-2 backdrop-blur-sm bg-[#AEBED9]/5 p-6 rounded-lg">
-              <h2 className="text-xl font-semibold text-[#FAF9F6]">Email</h2>
-              <a href="mailto:nesteemusicprovvidence@gmail.com" className="text-[#FFFFFF] hover:text-[#AEBED9] transition-colors">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 text-center md:text-left animate-fade-in px-4">
+            <div className="space-y-2 backdrop-blur-sm bg-[#AEBED9]/5 p-4 md:p-6 rounded-lg">
+              <h2 className="text-lg md:text-xl font-semibold text-[#FAF9F6]">Email</h2>
+              <a href="mailto:nesteemusicprovvidence@gmail.com" className="text-sm md:text-base text-[#FFFFFF] hover:text-[#AEBED9] transition-colors break-all">
                 nesteemusicprovvidence@gmail.com
               </a>
             </div>
-            <div className="space-y-2 backdrop-blur-sm bg-[#AEBED9]/5 p-6 rounded-lg">
-              <h2 className="text-xl font-semibold text-[#FAF9F6]">Phone</h2>
-              <a href="tel:+46708991799" className="text-[#FFFFFF] hover:text-[#AEBED9] transition-colors">
+            <div className="space-y-2 backdrop-blur-sm bg-[#AEBED9]/5 p-4 md:p-6 rounded-lg">
+              <h2 className="text-lg md:text-xl font-semibold text-[#FAF9F6]">Phone</h2>
+              <a href="tel:+46708991799" className="text-sm md:text-base text-[#FFFFFF] hover:text-[#AEBED9] transition-colors">
                 +46 708 991 799
               </a>
             </div>
           </div>
 
           {/* Contact Form */}
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 backdrop-blur-sm bg-[#AEBED9]/5 p-8 rounded-lg animate-fade-in">
-            <div className="space-y-4">
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 md:space-y-6 backdrop-blur-sm bg-[#AEBED9]/5 p-4 md:p-8 rounded-lg mx-4">
+            <div className="space-y-3 md:space-y-4">
               <div>
                 <Input
                   placeholder="Your Name"
                   {...register("name", { required: "Name is required" })}
-                  className="bg-transparent border-[#AEBED9] text-[#FFFFFF] placeholder:text-[#FFFFFF]/60"
+                  className="bg-transparent border-[#AEBED9] text-[#FFFFFF] placeholder:text-[#FFFFFF]/60 text-sm md:text-base"
                 />
                 {errors.name && (
-                  <p className="mt-1 text-sm text-red-500">{errors.name.message}</p>
+                  <p className="mt-1 text-xs md:text-sm text-red-500">{errors.name.message}</p>
                 )}
               </div>
 
@@ -97,10 +97,10 @@ const Contact = () => {
                       message: "Invalid email address",
                     },
                   })}
-                  className="bg-transparent border-[#AEBED9] text-[#FFFFFF] placeholder:text-[#FFFFFF]/60"
+                  className="bg-transparent border-[#AEBED9] text-[#FFFFFF] placeholder:text-[#FFFFFF]/60 text-sm md:text-base"
                 />
                 {errors.email && (
-                  <p className="mt-1 text-sm text-red-500">{errors.email.message}</p>
+                  <p className="mt-1 text-xs md:text-sm text-red-500">{errors.email.message}</p>
                 )}
               </div>
 
@@ -108,10 +108,10 @@ const Contact = () => {
                 <Textarea
                   placeholder="Share details about your project or inquiry..."
                   {...register("message", { required: "Message is required" })}
-                  className="bg-transparent border-[#AEBED9] text-[#FFFFFF] placeholder:text-[#FFFFFF]/60 min-h-[150px]"
+                  className="bg-transparent border-[#AEBED9] text-[#FFFFFF] placeholder:text-[#FFFFFF]/60 min-h-[120px] md:min-h-[150px] text-sm md:text-base"
                 />
                 {errors.message && (
-                  <p className="mt-1 text-sm text-red-500">{errors.message.message}</p>
+                  <p className="mt-1 text-xs md:text-sm text-red-500">{errors.message.message}</p>
                 )}
               </div>
             </div>
@@ -119,7 +119,7 @@ const Contact = () => {
             <Button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-[#AEBED9] text-[#121212] hover:bg-[#AEBED9]/80 transition-colors"
+              className="w-full bg-[#AEBED9] text-[#121212] hover:bg-[#AEBED9]/80 transition-colors text-sm md:text-base py-2 md:py-3"
             >
               {isSubmitting ? "Sending..." : "Send Message"}
             </Button>
