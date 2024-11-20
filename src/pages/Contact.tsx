@@ -37,9 +37,9 @@ const Contact = () => {
   };
 
   return (
-    <>
+    <div className="min-h-screen bg-[#121212] overflow-hidden">
       <Navbar />
-      <div className="relative min-h-screen bg-[#121212] py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div className="relative pt-8 px-4 sm:px-6 lg:px-8">
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#AEBED9]/10 rounded-full blur-3xl animate-pulse" />
@@ -49,7 +49,7 @@ const Contact = () => {
 
         <div className="relative max-w-3xl mx-auto space-y-8 md:space-y-12 z-10">
           {/* Header Section */}
-          <div className="text-center space-y-3 md:space-y-4 animate-fade-in">
+          <div className="text-center space-y-3 md:space-y-4 animate-fade-in mt-16">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FAF9F6]">Contact Me</h1>
             <p className="text-base md:text-lg text-[#FFFFFF] max-w-2xl mx-auto px-4">
               Let's work together. Feel free to send a message or call directly—I'm ready to collaborate.
@@ -73,7 +73,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 md:space-y-6 backdrop-blur-sm bg-[#AEBED9]/5 p-4 md:p-8 rounded-lg mx-4">
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 md:space-y-6 backdrop-blur-sm bg-[#AEBED9]/5 p-4 md:p-8 rounded-lg mx-4 mb-8">
             <div className="space-y-3 md:space-y-4">
               <div>
                 <Input
@@ -126,7 +126,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
