@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-[#121212]/95 backdrop-blur-md backdrop-saturate-150">
+    <nav className="bg-white/5 backdrop-blur-md backdrop-saturate-150">
       <div className="container mx-auto px-4 sm:px-6 py-4">
         <div className="flex items-center justify-between">
           <Link
@@ -47,26 +47,26 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile menu */}
+        {/* Mobile menu - Now fixed positioned */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-4">
+          <div className="md:hidden fixed left-0 right-0 bg-white/5 backdrop-blur-md backdrop-saturate-150 mt-4 py-4 space-y-4 z-50">
             <a
               href="#work"
-              className="block text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm"
+              className="block text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm px-4"
               onClick={() => setIsMenuOpen(false)}
             >
               Work
             </a>
             <a
               href="#about"
-              className="block text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm"
+              className="block text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm px-4"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </a>
             <Link
               to="/contact"
-              className="block text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm"
+              className="block text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm px-4"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
