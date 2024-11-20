@@ -60,14 +60,14 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left animate-fade-in">
             <div className="space-y-2 backdrop-blur-sm bg-[#AEBED9]/5 p-6 rounded-lg">
               <h2 className="text-xl font-semibold text-[#FAF9F6]">Email</h2>
-              <a href="mailto:your.email@example.com" className="text-[#FFFFFF] hover:text-[#AEBED9] transition-colors">
-                your.email@example.com
+              <a href="mailto:nesteemusicprovvidence@gmail.com" className="text-[#FFFFFF] hover:text-[#AEBED9] transition-colors">
+                nesteemusicprovvidence@gmail.com
               </a>
             </div>
             <div className="space-y-2 backdrop-blur-sm bg-[#AEBED9]/5 p-6 rounded-lg">
               <h2 className="text-xl font-semibold text-[#FAF9F6]">Phone</h2>
-              <a href="tel:+1234567890" className="text-[#FFFFFF] hover:text-[#AEBED9] transition-colors">
-                +1 (234) 567-890
+              <a href="tel:+46708991799" className="text-[#FFFFFF] hover:text-[#AEBED9] transition-colors">
+                +46 708 991 799
               </a>
             </div>
           </div>
