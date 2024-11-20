@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,12 +23,12 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="text-[#FAF9F6] font-montserrat font-bold text-xl tracking-wider"
           >
             NESTEE LIVE
-          </a>
+          </Link>
           <div className="hidden md:flex items-center space-x-8">
             <a
               href="#work"
@@ -41,12 +42,12 @@ const Navbar = () => {
             >
               About
             </a>
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       </div>
