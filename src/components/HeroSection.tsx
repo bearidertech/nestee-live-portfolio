@@ -1,5 +1,6 @@
 import AnimatedText from "./AnimatedText";
 import VideoBackground from "./VideoBackground";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -29,9 +30,9 @@ const HeroSection = () => {
         />
         <AnimatedText
           text={
-            <button className="cta-button bg-transparent border-2 border-[#FAF9F6] text-[#FAF9F6] px-6 sm:px-8 py-2 sm:py-3 rounded-full font-montserrat text-sm sm:text-base font-medium hover:bg-[#FAF9F6] hover:text-[#121212] transition-colors">
+            <Link to="/work" className="cta-button bg-transparent border-2 border-[#FAF9F6] text-[#FAF9F6] px-6 sm:px-8 py-2 sm:py-3 rounded-full font-montserrat text-sm sm:text-base font-medium hover:bg-[#FAF9F6] hover:text-[#121212] transition-colors">
               Discover My Work
-            </button>
+            </Link>
           }
           delay={800}
         />
