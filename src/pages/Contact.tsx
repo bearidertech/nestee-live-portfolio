@@ -7,26 +7,35 @@ const Contact = () => {
       <div className="relative pt-20 px-4 sm:px-6 lg:px-8">
         {/* Background textures and elements */}
         <div className="absolute inset-0 overflow-hidden">
-          {/* Top left gradient */}
-          <div className="absolute -top-40 -left-40 w-96 h-96 bg-gradient-to-r from-[#AEBED9]/20 to-transparent rounded-full blur-3xl animate-pulse" />
+          {/* Top section gradients */}
+          <div className="absolute -top-20 -left-40 w-96 h-96 bg-gradient-to-r from-[#AEBED9]/20 to-transparent rounded-full blur-3xl animate-pulse" />
+          <div className="absolute -top-40 left-1/4 w-80 h-80 bg-[#AEBED9]/15 rounded-full blur-3xl animate-pulse delay-700" />
+          <div className="absolute -top-20 right-1/4 w-72 h-72 bg-gradient-to-l from-[#AEBED9]/25 to-transparent rounded-full blur-3xl animate-pulse delay-500" />
+          <div className="absolute -top-40 -right-20 w-96 h-96 bg-[#AEBED9]/10 rounded-full blur-3xl animate-pulse delay-200" />
           
-          {/* Top right gradient */}
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#AEBED9]/10 rounded-full blur-3xl animate-pulse" />
+          {/* Upper middle section gradients */}
+          <div className="absolute top-1/4 -left-20 w-80 h-80 bg-[#AEBED9]/20 rounded-full blur-3xl animate-pulse delay-1000" />
+          <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-gradient-to-tr from-[#AEBED9]/15 to-transparent rounded-full blur-3xl animate-pulse delay-1200" />
+          <div className="absolute top-1/4 right-1/3 w-72 h-72 bg-[#AEBED9]/10 rounded-full blur-3xl animate-pulse delay-1500" />
+          <div className="absolute top-1/4 -right-20 w-80 h-80 bg-gradient-to-l from-[#AEBED9]/20 to-transparent rounded-full blur-3xl animate-pulse delay-800" />
           
-          {/* Middle left gradient */}
-          <div className="absolute top-1/2 -left-40 w-80 h-80 bg-[#AEBED9]/5 rounded-full blur-3xl animate-pulse delay-1000" />
+          {/* Middle section gradients */}
+          <div className="absolute top-1/2 -left-40 w-96 h-96 bg-gradient-to-r from-[#AEBED9]/25 to-transparent rounded-full blur-3xl animate-pulse delay-1800" />
+          <div className="absolute top-1/2 left-1/4 w-80 h-80 bg-[#AEBED9]/15 rounded-full blur-3xl animate-pulse delay-2000" />
+          <div className="absolute top-1/2 right-1/4 w-72 h-72 bg-gradient-to-l from-[#AEBED9]/20 to-transparent rounded-full blur-3xl animate-pulse delay-1600" />
+          <div className="absolute top-1/2 -right-40 w-96 h-96 bg-[#AEBED9]/10 rounded-full blur-3xl animate-pulse delay-1400" />
           
-          {/* Middle right gradient */}
-          <div className="absolute top-1/2 -right-40 w-96 h-96 bg-gradient-to-l from-[#AEBED9]/15 to-transparent rounded-full blur-3xl animate-pulse delay-1500" />
+          {/* Lower middle section gradients */}
+          <div className="absolute top-3/4 -left-20 w-80 h-80 bg-[#AEBED9]/20 rounded-full blur-3xl animate-pulse delay-2200" />
+          <div className="absolute top-3/4 left-1/3 w-64 h-64 bg-gradient-to-tr from-[#AEBED9]/15 to-transparent rounded-full blur-3xl animate-pulse delay-2400" />
+          <div className="absolute top-3/4 right-1/3 w-72 h-72 bg-[#AEBED9]/10 rounded-full blur-3xl animate-pulse delay-2600" />
+          <div className="absolute top-3/4 -right-20 w-80 h-80 bg-gradient-to-l from-[#AEBED9]/20 to-transparent rounded-full blur-3xl animate-pulse delay-2800" />
           
-          {/* Bottom center gradient */}
-          <div className="absolute -bottom-40 right-1/3 w-80 h-80 bg-[#AEBED9]/10 rounded-full blur-3xl animate-pulse delay-2000" />
-          
-          {/* Bottom left gradient */}
-          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-[#AEBED9]/20 to-transparent rounded-full blur-3xl animate-pulse delay-2500" />
-          
-          {/* Bottom right gradient */}
-          <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-gradient-to-tl from-[#AEBED9]/15 to-transparent rounded-full blur-3xl animate-pulse delay-3000" />
+          {/* Bottom section gradients */}
+          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-[#AEBED9]/20 to-transparent rounded-full blur-3xl animate-pulse delay-3000" />
+          <div className="absolute -bottom-20 left-1/4 w-80 h-80 bg-[#AEBED9]/15 rounded-full blur-3xl animate-pulse delay-3200" />
+          <div className="absolute -bottom-40 right-1/4 w-72 h-72 bg-gradient-to-l from-[#AEBED9]/25 to-transparent rounded-full blur-3xl animate-pulse delay-3400" />
+          <div className="absolute -bottom-20 -right-40 w-96 h-96 bg-gradient-to-tl from-[#AEBED9]/15 to-transparent rounded-full blur-3xl animate-pulse delay-3600" />
         </div>
 
         <div className="relative max-w-3xl mx-auto space-y-16 md:space-y-20 z-10">
