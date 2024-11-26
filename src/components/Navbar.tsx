@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Home } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,12 +9,21 @@ const Navbar = () => {
     <nav className="bg-white/5 backdrop-blur-md backdrop-saturate-150 fixed w-full top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link
-            to="/"
-            className="text-[#FAF9F6] font-montserrat font-bold text-lg sm:text-xl tracking-wider"
-          >
-            NESTEE LIVE
-          </Link>
+          <div className="flex items-center space-x-4">
+            <Link
+              to="/"
+              className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors"
+              aria-label="Home"
+            >
+              <Home size={24} />
+            </Link>
+            <Link
+              to="/"
+              className="text-[#FAF9F6] font-montserrat font-bold text-lg sm:text-xl tracking-wider"
+            >
+              NESTEE LIVE
+            </Link>
+          </div>
           
           {/* Mobile menu button */}
           <button
