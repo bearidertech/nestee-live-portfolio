@@ -12,12 +12,6 @@ const Navbar = () => {
           <div className="flex items-center space-x-4">
             <Link
               to="/"
-              className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
-            >
-              Home
-            </Link>
-            <Link
-              to="/"
               className="text-[#FAF9F6] font-montserrat font-bold text-lg sm:text-xl tracking-wider"
             >
               NESTEE LIVE
@@ -34,6 +28,12 @@ const Navbar = () => {
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
+            <Link
+              to="/"
+              className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
+            >
+              Home
+            </Link>
             <a
               href="#work"
               className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
@@ -58,6 +58,13 @@ const Navbar = () => {
         {/* Mobile menu */}
         {isMenuOpen && (
           <div className="md:hidden fixed left-0 right-0 top-[72px] bg-white/5 backdrop-blur-md backdrop-saturate-150 py-4 space-y-4">
+            <Link
+              to="/"
+              className="block text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm px-4"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </Link>
             <a
               href="#work"
               className="block text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm px-4"
