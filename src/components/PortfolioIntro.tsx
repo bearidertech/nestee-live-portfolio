@@ -8,7 +8,7 @@ const PortfolioIntro = () => {
         The services we offer are:
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mb-8">
-        <div className="p-6 bg-white/5 rounded-lg backdrop-blur-sm">
+        <div className="backdrop-blur-md bg-[#AEBED9]/5 p-6 rounded-lg border border-[#AEBED9]/20 hover:bg-[#AEBED9]/10 transition-all duration-300">
           <h3 className="text-xl font-montserrat font-semibold mb-3 text-[#AEBED9]">
             Live Music Arrangements
           </h3>
@@ -16,7 +16,7 @@ const PortfolioIntro = () => {
             Custom arrangements tailored to enhance your live performances and create unique musical experiences.
           </p>
         </div>
-        <div className="p-6 bg-white/5 rounded-lg backdrop-blur-sm">
+        <div className="backdrop-blur-md bg-[#AEBED9]/5 p-6 rounded-lg border border-[#AEBED9]/20 hover:bg-[#AEBED9]/10 transition-all duration-300">
           <h3 className="text-xl font-montserrat font-semibold mb-3 text-[#AEBED9]">
             Session Programming
           </h3>
@@ -24,7 +24,7 @@ const PortfolioIntro = () => {
             Professional live session programming to bring your studio tracks to life on stage.
           </p>
         </div>
-        <div className="p-6 bg-white/5 rounded-lg backdrop-blur-sm">
+        <div className="backdrop-blur-md bg-[#AEBED9]/5 p-6 rounded-lg border border-[#AEBED9]/20 hover:bg-[#AEBED9]/10 transition-all duration-300">
           <h3 className="text-xl font-montserrat font-semibold mb-3 text-[#AEBED9]">
             Keyboard Performance
           </h3>
@@ -32,7 +32,7 @@ const PortfolioIntro = () => {
             Expert keyboard playing that adds depth and richness to your live shows.
           </p>
         </div>
-        <div className="p-6 bg-white/5 rounded-lg backdrop-blur-sm">
+        <div className="backdrop-blur-md bg-[#AEBED9]/5 p-6 rounded-lg border border-[#AEBED9]/20 hover:bg-[#AEBED9]/10 transition-all duration-300">
           <h3 className="text-xl font-montserrat font-semibold mb-3 text-[#AEBED9]">
             Music Direction
           </h3>
