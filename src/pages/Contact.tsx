@@ -4,9 +4,9 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-[#121212] overflow-hidden">
       <Navbar />
-      <div className="relative pt-20 px-4 sm:px-6 lg:px-8">
+      <div className="relative min-h-screen pt-20 px-4 sm:px-6 lg:px-8">
         {/* Background textures and elements */}
-        <div className="absolute inset-0 overflow-hidden">
+        <div className="fixed inset-0 overflow-hidden">
           {/* Top section gradients */}
           <div className="absolute -top-20 -left-40 w-96 h-96 bg-gradient-to-r from-[#AEBED9]/20 to-transparent rounded-full blur-3xl animate-pulse" />
           <div className="absolute -top-40 left-1/4 w-80 h-80 bg-[#AEBED9]/15 rounded-full blur-3xl animate-pulse delay-700" />
