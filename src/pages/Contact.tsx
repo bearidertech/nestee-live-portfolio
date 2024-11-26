@@ -7,15 +7,6 @@ const Contact = () => {
       <div className="relative pt-20 px-4 sm:px-6 lg:px-8">
         {/* Background textures and elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div 
-            className="absolute inset-0 opacity-10"
-            style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?auto=format&fit=crop&q=80')`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#AEBED9]/10 rounded-full blur-3xl animate-pulse" />
           <div className="absolute top-1/2 -left-40 w-80 h-80 bg-[#AEBED9]/5 rounded-full blur-3xl animate-pulse delay-1000" />
           <div className="absolute -bottom-40 right-1/3 w-80 h-80 bg-[#AEBED9]/10 rounded-full blur-3xl animate-pulse delay-2000" />
