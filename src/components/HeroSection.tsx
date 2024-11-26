@@ -1,19 +1,15 @@
 import AnimatedText from "./AnimatedText";
+import VideoBackground from "./VideoBackground";
 
 const HeroSection = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2070')",
-        }}
+      {/* Video Background */}
+      <VideoBackground 
+        videoUrl="YOUR_CLOUDINARY_VIDEO_URL"
+        fallbackImage="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2070"
       />
       
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 hero-gradient" />
-
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <AnimatedText
