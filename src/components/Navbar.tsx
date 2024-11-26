@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Home } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,10 +12,9 @@ const Navbar = () => {
           <div className="flex items-center space-x-4">
             <Link
               to="/"
-              className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors"
-              aria-label="Home"
+              className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
             >
-              <Home size={24} />
+              Home
             </Link>
             <Link
               to="/"
