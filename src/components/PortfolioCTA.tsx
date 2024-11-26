@@ -8,7 +8,7 @@ const PortfolioCTA = () => {
         videoUrl="/path-to-your-video.mp4"
         fallbackImage="/placeholder.svg"
       />
-      <div className="relative z-10">
+      <div className="relative z-10 text-center">
         <h2 className="text-2xl md:text-3xl font-montserrat font-bold text-[#FAF9F6] mb-6">
           Interested in working together?
         </h2>
