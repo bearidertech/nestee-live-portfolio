@@ -12,36 +12,36 @@ const artists: Artist[] = [
   {
     name: "Keys The Prince",
     country: "UK",
-    services: ["Live Music Arrangement", "Music Direction"],
+    services: ["Live Music Arrangement", "Keyboard Performance"],
     description:
-      "Arranged live music and provided music direction for a series of electrifying performances across the UK, collaborating closely to enhance the energy of the live show.",
+      "Provided live music arrangements and keyboard performances, bringing a unique blend of musical expertise to enhance the live show experience.",
     image:
       "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?q=80&w=2070",
   },
   {
     name: "Cheryl Porter",
     country: "USA",
-    services: ["Live Session Programming", "Keyboard"],
+    services: ["Keyboard Performance"],
     description:
-      "Worked on live session programming and keyboard accompaniment, bringing a soulful atmosphere to Cheryl Porter's live gospel performances.",
+      "Delivered soulful keyboard performances that complemented Cheryl Porter's powerful gospel vocals, creating memorable live experiences.",
     image:
       "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2070",
   },
   {
     name: "Dani M",
     country: "Sweden",
-    services: ["Music Direction", "Live Arrangement"],
+    services: ["Live Music Arrangement"],
     description:
-      "Directed live shows, including musical arrangements and rehearsals, ensuring a seamless and engaging performance for audiences.",
+      "Created dynamic live music arrangements that transformed studio tracks into engaging live performances, elevating the concert experience.",
     image:
       "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070",
   },
   {
     name: "Jireel",
     country: "Sweden",
-    services: ["Live Music Arrangement", "Music Direction"],
+    services: ["Live Music Arrangement", "Music Direction", "Keyboard Performance"],
     description:
-      "Crafted 26 unique live music arrangements and directed multiple performances to maintain consistent quality across Jireel's shows.",
+      "Provided comprehensive musical support including arrangements, direction, and keyboard performance, ensuring a cohesive and professional live show experience.",
     image:
       "https://images.unsplash.com/photo-1473091534298-04dcbce3278c?q=80&w=2070",
   },
