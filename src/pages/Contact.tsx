@@ -7,9 +7,26 @@ const Contact = () => {
       <div className="relative pt-20 px-4 sm:px-6 lg:px-8">
         {/* Background textures and elements */}
         <div className="absolute inset-0 overflow-hidden">
+          {/* Top left gradient */}
+          <div className="absolute -top-40 -left-40 w-96 h-96 bg-gradient-to-r from-[#AEBED9]/20 to-transparent rounded-full blur-3xl animate-pulse" />
+          
+          {/* Top right gradient */}
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#AEBED9]/10 rounded-full blur-3xl animate-pulse" />
+          
+          {/* Middle left gradient */}
           <div className="absolute top-1/2 -left-40 w-80 h-80 bg-[#AEBED9]/5 rounded-full blur-3xl animate-pulse delay-1000" />
+          
+          {/* Middle right gradient */}
+          <div className="absolute top-1/2 -right-40 w-96 h-96 bg-gradient-to-l from-[#AEBED9]/15 to-transparent rounded-full blur-3xl animate-pulse delay-1500" />
+          
+          {/* Bottom center gradient */}
           <div className="absolute -bottom-40 right-1/3 w-80 h-80 bg-[#AEBED9]/10 rounded-full blur-3xl animate-pulse delay-2000" />
+          
+          {/* Bottom left gradient */}
+          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-[#AEBED9]/20 to-transparent rounded-full blur-3xl animate-pulse delay-2500" />
+          
+          {/* Bottom right gradient */}
+          <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-gradient-to-tl from-[#AEBED9]/15 to-transparent rounded-full blur-3xl animate-pulse delay-3000" />
         </div>
 
         <div className="relative max-w-3xl mx-auto space-y-16 md:space-y-20 z-10">
