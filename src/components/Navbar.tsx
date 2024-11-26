@@ -40,12 +40,6 @@ const Navbar = () => {
             >
               Work
             </Link>
-            <a
-              href="#about"
-              className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
-            >
-              About
-            </a>
             <Link
               to="/contact"
               className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
@@ -72,13 +66,6 @@ const Navbar = () => {
             >
               Work
             </Link>
-            <a
-              href="#about"
-              className="block text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm px-4"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              About
-            </a>
             <Link
               to="/contact"
               className="block text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm px-4"
