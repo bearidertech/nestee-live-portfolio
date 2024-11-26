@@ -7,7 +7,7 @@ const PortfolioIntro = () => {
       <h2 className="text-2xl md:text-3xl font-montserrat mb-8 text-[#FAF9F6]">
         The services we offer are:
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mb-16">
         <div className="backdrop-blur-md bg-[#AEBED9]/5 p-6 rounded-lg border border-[#AEBED9]/20 hover:bg-[#AEBED9]/10 transition-all duration-300">
           <h3 className="text-xl font-montserrat font-semibold mb-3 text-[#AEBED9]">
             Live Music Arrangements
@@ -41,6 +41,9 @@ const PortfolioIntro = () => {
           </p>
         </div>
       </div>
+      <h2 className="text-2xl md:text-3xl font-montserrat mb-8 text-[#FAF9F6]">
+        Artists We've Worked With
+      </h2>
       <p className="text-lg md:text-xl text-[#FAF9F6]/80 leading-relaxed">
         We've had the privilege of collaborating with incredible artists from around the world, 
         crafting unforgettable live performances that leave lasting impressions.
