@@ -34,12 +34,12 @@ const Navbar = () => {
             >
               Home
             </Link>
-            <a
-              href="#work"
+            <Link
+              to="/work"
               className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
             >
               Work
-            </a>
+            </Link>
             <a
               href="#about"
               className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
@@ -65,13 +65,13 @@ const Navbar = () => {
             >
               Home
             </Link>
-            <a
-              href="#work"
+            <Link
+              to="/work"
               className="block text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm px-4"
               onClick={() => setIsMenuOpen(false)}
             >
               Work
-            </a>
+            </Link>
             <a
               href="#about"
               className="block text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm px-4"
