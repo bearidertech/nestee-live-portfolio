@@ -62,7 +62,7 @@ const CustomerReview = () => {
               <img
                 src={review.image}
                 alt={review.name}
-                className="w-14 h-14 rounded-full object-cover object-center"
+                className="w-14 h-14 rounded-full object-cover object-center scale-75"
               />
               <div>
                 <h3 className="font-montserrat font-semibold text-lg">
