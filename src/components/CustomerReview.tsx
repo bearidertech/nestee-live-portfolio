@@ -16,11 +16,11 @@ const CustomerReview = () => {
       image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080",
     },
     {
-      name: "Sofia Andersson",
-      role: language === "sv" ? "Produktionsassistent" : "Production Assistant",
+      name: "Keys The Prince",
+      role: language === "sv" ? "Artist" : "Artist",
       review: {
-        sv: "Deras tekniska kompetens och musikaliska förståelse gjorde hela produktionsprocessen smidig och resultatet blev enastående.",
-        en: "Their technical expertise and musical understanding made the entire production process smooth, and the result was outstanding.",
+        sv: "Bästa Live Programmeraren i branschen",
+        en: "Best Live Programmer in the game",
       },
       rating: 5,
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2087",
