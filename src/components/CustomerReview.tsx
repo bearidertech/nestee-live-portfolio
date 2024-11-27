@@ -25,6 +25,16 @@ const CustomerReview = () => {
       rating: 5,
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2087",
     },
+    {
+      name: "Albi X",
+      role: language === "sv" ? "Artist" : "Artist",
+      review: {
+        sv: "Detta är de typer av liveupplevelser jag drömde om för mina shower",
+        en: "These are the types of live experiences I dreamed for my shows",
+      },
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2087",
+    },
   ];
 
   return (
