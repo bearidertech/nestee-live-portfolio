@@ -7,7 +7,7 @@ const CustomerReview = () => {
   const reviews = [
     {
       name: "Marcus Johansson",
-      role: language === "sv" ? "Turnéledare" : "Tour Manager",
+      role: language === "sv" ? "Turnéledare för Jireel" : "Tour Manager for Jireel",
       review: {
         sv: "Ett fantastiskt samarbete med ett professionellt team som verkligen förstår live-musik. Deras arrangemang lyfte hela showen till en ny nivå.",
         en: "An amazing collaboration with a professional team that truly understands live music. Their arrangements elevated the entire show to a new level.",
@@ -30,7 +30,7 @@ const CustomerReview = () => {
   return (
     <div className="py-12 animate-fade-in">
       <h2 className="text-3xl font-montserrat font-bold mb-8">
-        {language === "sv" ? "Vad Jireels team säger" : "What Jireel's team says"}
+        {language === "sv" ? "Vad våra kunder säger" : "What our customers say"}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {reviews.map((review, index) => (
