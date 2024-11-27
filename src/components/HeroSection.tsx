@@ -11,7 +11,7 @@ const HeroSection = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center">
       <VideoBackground 
-        videoUrl="https://player.vimeo.com/external/370467553.sd.mp4?s=96de8b923370fb7fa8616d4e0b74eaf3fac9e576&profile_id=164&oauth2_token_id=57447761"
+        videoUrl="/Homepage.mp4"
         fallbackImage="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2070"
       />
       
