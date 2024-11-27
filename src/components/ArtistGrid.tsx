@@ -39,8 +39,7 @@ const artists: Artist[] = [
     services: ["Live Music Arrangement", "Music Direction", "Keyboard Performance"],
     description:
       "Provided comprehensive musical support including arrangements, direction, and keyboard performance, ensuring a cohesive and professional live show experience.",
-    image:
-      "https://images.unsplash.com/photo-1473091534298-04dcbce3278c?q=80&w=2070",
+    image: "/Jlive.png",
   },
 ];
 
