@@ -13,7 +13,7 @@ const CustomerReview = () => {
         en: `"It's a pleasure collaborating with Nestee Live. For artists who want to take their live shows to the next level, they are the right people to reach out for."`,
       },
       rating: 5,
-      image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080",
+      image: "/moty.png",
     },
     {
       name: "Keys The Prince",
