@@ -27,33 +27,6 @@
   background: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.7));
 }
 
-.cta-button {
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
-}
-
-.cta-button::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
-  transform: translateX(-100%);
-  transition: transform 0.5s ease;
-  z-index: -1;
-}
-
-.cta-button:hover::before {
-  transform: translateX(100%);
-}
-
 @keyframes pulse {
   0%, 100% {
     opacity: 0.5;
