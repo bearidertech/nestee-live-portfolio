@@ -31,8 +31,7 @@ const artists: Artist[] = [
     services: ["Live Music Arrangement"],
     description:
       "Created dynamic live music arrangements that transformed studio tracks into engaging live performances, elevating the concert experience.",
-    image:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070",
+    image: "/DaniLive.png",
   },
   {
     name: "Jireel",
