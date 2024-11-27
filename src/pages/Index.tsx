@@ -3,7 +3,7 @@ import HeroSection from "@/components/HeroSection";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-[#121212]">
+    <main className="min-h-screen w-full bg-[#121212] overflow-x-hidden">
       <Navbar />
       <HeroSection />
     </main>

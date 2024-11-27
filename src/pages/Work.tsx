@@ -6,9 +6,9 @@ import CustomerReview from "@/components/CustomerReview";
 
 const Work = () => {
   return (
-    <main className="min-h-screen bg-[#121212]">
+    <main className="min-h-screen w-full bg-[#121212] overflow-x-hidden">
       <Navbar />
-      <div className="container mx-auto px-4 py-24">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 lg:py-28">
         <PortfolioIntro />
         <ArtistGrid />
         <CustomerReview />
