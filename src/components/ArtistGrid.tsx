@@ -53,9 +53,14 @@ const ArtistGrid = () => {
           <DialogTrigger asChild>
             <div className="group relative overflow-hidden rounded-lg cursor-pointer animate-fade-in">
               <div
-                className="aspect-video bg-cover bg-center"
-                style={{ backgroundImage: `url(${artist.image})` }}
-              />
+                className="aspect-video bg-cover bg-center relative"
+                style={{ 
+                  backgroundImage: `url(${artist.image})`,
+                  backgroundPositionY: '25%'
+                }}
+              >
+                <div className="absolute inset-0 bg-black/40 transition-opacity group-hover:bg-black/60" />
+              </div>
               <div className="absolute inset-0 p-6 flex flex-col justify-end transform transition-transform duration-300">
                 <h3 className="text-xl font-montserrat font-bold text-[#FAF9F6] mb-2">
                   {artist.name} ({artist.country})
