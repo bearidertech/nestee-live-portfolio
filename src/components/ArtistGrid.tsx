@@ -57,7 +57,7 @@ const ArtistGrid = () => {
                 className="aspect-video bg-cover bg-center"
                 style={{ backgroundImage: `url(${artist.image})` }}
               />
-              <div className="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end transform transition-transform duration-300 hover:bg-black/80">
+              <div className="absolute inset-0 p-6 flex flex-col justify-end transform transition-transform duration-300">
                 <h3 className="text-xl font-montserrat font-bold text-[#FAF9F6] mb-2">
                   {artist.name} ({artist.country})
                 </h3>
