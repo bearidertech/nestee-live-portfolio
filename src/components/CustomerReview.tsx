@@ -9,8 +9,8 @@ const CustomerReview = () => {
       name: "Moty Team",
       role: language === "sv" ? "Jireels Core team" : "Jireel's Core team",
       review: {
-        sv: "Det är ett nöje att samarbeta med Nestee Live. För artister som vill ta sina liveshow till nästa nivå är de rätt personer att kontakta.",
-        en: "It's a pleasure collaborating with Nestee Live. For artists who want to take their live shows to the next level, they are the right people to reach out for.",
+        sv: '"Det är ett nöje att samarbeta med Nestee Live. För artister som vill ta sina liveshow till nästa nivå är de rätt personer att kontakta."',
+        en: '"It's a pleasure collaborating with Nestee Live. For artists who want to take their live shows to the next level, they are the right people to reach out for."',
       },
       rating: 5,
       image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080",
@@ -19,8 +19,8 @@ const CustomerReview = () => {
       name: "Keys The Prince",
       role: language === "sv" ? "Artist" : "Artist",
       review: {
-        sv: "Bästa Live Programmeraren i branschen",
-        en: "Best Live Programmer in the game",
+        sv: '"Bästa Live Programmeraren i branschen"',
+        en: '"Best Live Programmer in the game"',
       },
       rating: 5,
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2087",
@@ -29,8 +29,8 @@ const CustomerReview = () => {
       name: "Albi X",
       role: language === "sv" ? "Artist" : "Artist",
       review: {
-        sv: "Detta är de typer av liveupplevelser jag drömde om för mina shower",
-        en: "These are the types of live experiences I dreamed for my shows",
+        sv: '"Detta är de typer av liveupplevelser jag drömde om för mina shower"',
+        en: '"These are the types of live experiences I dreamed for my shows"',
       },
       rating: 5,
       image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2087",
@@ -39,8 +39,8 @@ const CustomerReview = () => {
       name: "Vala Esfahanian",
       role: language === "sv" ? "United Stage" : "United Stage",
       review: {
-        sv: "Fantastiskt att jobba med Nestee Live",
-        en: "Great Working with Nestee Live",
+        sv: '"Fantastiskt att jobba med Nestee Live"',
+        en: '"Great Working with Nestee Live"',
       },
       rating: 5,
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2088",
