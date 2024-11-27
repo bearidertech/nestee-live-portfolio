@@ -23,8 +23,7 @@ const artists: Artist[] = [
     services: ["Keyboard Performance"],
     description:
       "Delivered soulful keyboard performances that complemented Cheryl Porter's powerful gospel vocals, creating memorable live experiences.",
-    image:
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2070",
+    image: "/Clive.png",
   },
   {
     name: "Dani M",
