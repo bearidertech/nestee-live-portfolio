@@ -15,8 +15,7 @@ const artists: Artist[] = [
     services: ["Live Music Arrangement", "Keyboard Performance"],
     description:
       "Provided live music arrangements and keyboard performances, bringing a unique blend of musical expertise to enhance the live show experience.",
-    image:
-      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?q=80&w=2070",
+    image: "/kdpLive.png",
   },
   {
     name: "Cheryl Porter",
