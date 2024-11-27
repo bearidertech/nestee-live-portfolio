@@ -22,7 +22,7 @@ const PortfolioCTA = () => {
         </p>
         <Link
           to="/contact"
-          className="cta-button inline-block bg-transparent border-2 border-[#FAF9F6] text-[#FAF9F6] px-8 py-3 rounded-full font-montserrat text-lg font-medium hover:bg-[#FAF9F6] hover:text-[#121212] transition-colors"
+          className="cta-button inline-flex items-center justify-center bg-transparent border-2 border-[#FAF9F6] text-[#FAF9F6] px-8 py-3 rounded-full font-montserrat text-lg font-medium hover:bg-[#FAF9F6] hover:text-[#121212] transition-colors overflow-hidden"
         >
           {t.cta.button}
         </Link>
