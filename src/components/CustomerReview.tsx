@@ -6,11 +6,11 @@ const CustomerReview = () => {
 
   const reviews = [
     {
-      name: "Marcus Johansson",
+      name: "Moty Team",
       role: language === "sv" ? "Turnéledare för Jireel" : "Tour Manager for Jireel",
       review: {
-        sv: "Ett fantastiskt samarbete med ett professionellt team som verkligen förstår live-musik. Deras arrangemang lyfte hela showen till en ny nivå.",
-        en: "An amazing collaboration with a professional team that truly understands live music. Their arrangements elevated the entire show to a new level.",
+        sv: "Det är ett nöje att samarbeta med Nestee Live. För artister som vill ta sina liveshow till nästa nivå är de rätt personer att kontakta.",
+        en: "It's a pleasure collaborating with Nestee Live. For artists who want to take their live shows to the next level, they are the right people to reach out for.",
       },
       rating: 5,
       image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080",
