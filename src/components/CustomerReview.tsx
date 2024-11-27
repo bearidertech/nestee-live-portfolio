@@ -35,6 +35,16 @@ const CustomerReview = () => {
       rating: 5,
       image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2087",
     },
+    {
+      name: "Vala Esfahanian",
+      role: language === "sv" ? "United Stage" : "United Stage",
+      review: {
+        sv: "Fantastiskt att jobba med Nestee Live",
+        en: "Great Working with Nestee Live",
+      },
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2088",
+    },
   ];
 
   return (
