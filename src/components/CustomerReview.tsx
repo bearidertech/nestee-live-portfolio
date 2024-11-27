@@ -7,7 +7,7 @@ const CustomerReview = () => {
   const reviews = [
     {
       name: "Moty Team",
-      role: language === "sv" ? "Turnéledare för Jireel" : "Tour Manager for Jireel",
+      role: language === "sv" ? "Jireels Core team" : "Jireel's Core team",
       review: {
         sv: "Det är ett nöje att samarbeta med Nestee Live. För artister som vill ta sina liveshow till nästa nivå är de rätt personer att kontakta.",
         en: "It's a pleasure collaborating with Nestee Live. For artists who want to take their live shows to the next level, they are the right people to reach out for.",
