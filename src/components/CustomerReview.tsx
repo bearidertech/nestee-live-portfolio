@@ -23,7 +23,7 @@ const CustomerReview = () => {
         en: `"Best Live Programmer in the game"`,
       },
       rating: 5,
-      image: "/ktp.png",
+      image: "/kdp.png",
     },
     {
       name: "Albi X",
