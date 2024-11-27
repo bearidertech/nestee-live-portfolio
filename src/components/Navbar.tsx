@@ -1,9 +1,14 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/utils/translations";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language } = useLanguage();
+  const t = translations[language];
 
   return (
     <nav className="bg-white/5 backdrop-blur-md backdrop-saturate-150 fixed w-full top-0 z-50">
@@ -17,39 +22,37 @@ const Navbar = () => {
               NESTEE LIVE
             </Link>
           </div>
+
+          <div className="hidden md:flex items-center space-x-8">
+            <Link
+              to="/"
+              className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
+            >
+              {t.nav.home}
+            </Link>
+            <Link
+              to="/work"
+              className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
+            >
+              {t.nav.work}
+            </Link>
+            <Link
+              to="/contact"
+              className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
+            >
+              {t.nav.contact}
+            </Link>
+            <LanguageSwitcher />
+          </div>
           
-          {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden text-[#FAF9F6] hover:text-[#AEBED9] transition-colors"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
-
-          {/* Desktop menu */}
-          <div className="hidden md:flex items-center space-x-8">
-            <Link
-              to="/"
-              className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
-            >
-              Home
-            </Link>
-            <Link
-              to="/work"
-              className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
-            >
-              Work
-            </Link>
-            <Link
-              to="/contact"
-              className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
-            >
-              Contact
-            </Link>
-          </div>
         </div>
 
-        {/* Mobile menu */}
         {isMenuOpen && (
           <div className="md:hidden fixed left-0 right-0 top-[72px] bg-white/5 backdrop-blur-md backdrop-saturate-150 py-4 space-y-4">
             <Link
@@ -57,22 +60,25 @@ const Navbar = () => {
               className="block text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm px-4"
               onClick={() => setIsMenuOpen(false)}
             >
-              Home
+              {t.nav.home}
             </Link>
             <Link
               to="/work"
               className="block text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm px-4"
               onClick={() => setIsMenuOpen(false)}
             >
-              Work
+              {t.nav.work}
             </Link>
             <Link
               to="/contact"
               className="block text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm px-4"
               onClick={() => setIsMenuOpen(false)}
             >
-              Contact
+              {t.nav.contact}
             </Link>
+            <div className="px-4">
+              <LanguageSwitcher />
+            </div>
           </div>
         )}
       </div>

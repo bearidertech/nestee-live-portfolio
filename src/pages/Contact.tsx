@@ -1,6 +1,11 @@
 import Navbar from "@/components/Navbar";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/utils/translations";
 
 const Contact = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <div className="min-h-screen bg-[#121212] overflow-hidden">
       <Navbar />
@@ -25,21 +30,18 @@ const Contact = () => {
         </div>
 
         <div className="relative max-w-3xl mx-auto space-y-16 md:space-y-20 z-10">
-          {/* Header Section */}
           <div className="text-center space-y-4 md:space-y-6 animate-fade-in mt-16">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FAF9F6]">
-              Let's Connect
+              {t.contact.title}
             </h1>
             <p className="text-base md:text-lg text-[#FFFFFF] max-w-2xl mx-auto px-4">
-              Ready to collaborate? Reach out directly through email or phone—I'm excited to hear from you.
+              {t.contact.description}
             </p>
           </div>
 
-          {/* Contact Information Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 px-4 pb-16">
-            {/* Email Card */}
             <div className="backdrop-blur-md bg-[#AEBED9]/5 p-8 rounded-lg border border-[#AEBED9]/20 hover:bg-[#AEBED9]/10 transition-all duration-300">
-              <h2 className="text-xl md:text-2xl font-semibold text-[#FAF9F6] mb-4">Email</h2>
+              <h2 className="text-xl md:text-2xl font-semibold text-[#FAF9F6] mb-4">{t.contact.email}</h2>
               <a 
                 href="mailto:nesteemusicprovvidence@gmail.com" 
                 className="text-sm md:text-base text-[#FFFFFF] hover:text-[#AEBED9] transition-colors break-all inline-block"
@@ -48,9 +50,8 @@ const Contact = () => {
               </a>
             </div>
 
-            {/* Phone Card */}
             <div className="backdrop-blur-md bg-[#AEBED9]/5 p-8 rounded-lg border border-[#AEBED9]/20 hover:bg-[#AEBED9]/10 transition-all duration-300">
-              <h2 className="text-xl md:text-2xl font-semibold text-[#FAF9F6] mb-4">Phone</h2>
+              <h2 className="text-xl md:text-2xl font-semibold text-[#FAF9F6] mb-4">{t.contact.phone}</h2>
               <a 
                 href="tel:+46708991799" 
                 className="text-sm md:text-base text-[#FFFFFF] hover:text-[#AEBED9] transition-colors"
