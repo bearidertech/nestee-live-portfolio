@@ -12,7 +12,6 @@ const HeroSection = () => {
     <div className="relative min-h-screen flex items-center justify-center">
       <VideoBackground 
         videoUrl="/HomePage.mp4"
-        fallbackImage="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2070"
       />
       
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
