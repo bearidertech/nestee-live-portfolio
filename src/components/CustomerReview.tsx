@@ -23,7 +23,7 @@ const CustomerReview = () => {
         en: `"Best Live Programmer in the game"`,
       },
       rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2087",
+      image: "/ktp.png",
     },
     {
       name: "Albi X",
@@ -33,7 +33,7 @@ const CustomerReview = () => {
         en: `"These are the types of live experiences I dreamed for my shows"`,
       },
       rating: 5,
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2087",
+      image: "/ax.png",
     },
     {
       name: "Vala Esfahanian",
@@ -43,7 +43,7 @@ const CustomerReview = () => {
         en: `"Great Working with Nestee Live"`,
       },
       rating: 5,
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2088",
+      image: "/us.png",
     },
   ];
 
