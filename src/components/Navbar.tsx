@@ -23,34 +23,40 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-8">
-            <Link
-              to="/"
-              className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
+          <div className="flex items-center space-x-4">
+            <div className="md:hidden">
+              <LanguageSwitcher />
+            </div>
+            
+            <div className="hidden md:flex items-center space-x-8">
+              <Link
+                to="/"
+                className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
+              >
+                {t.nav.home}
+              </Link>
+              <Link
+                to="/work"
+                className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
+              >
+                {t.nav.work}
+              </Link>
+              <Link
+                to="/contact"
+                className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
+              >
+                {t.nav.contact}
+              </Link>
+              <LanguageSwitcher />
+            </div>
+            
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden text-[#FAF9F6] hover:text-[#AEBED9] transition-colors"
             >
-              {t.nav.home}
-            </Link>
-            <Link
-              to="/work"
-              className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
-            >
-              {t.nav.work}
-            </Link>
-            <Link
-              to="/contact"
-              className="text-[#FAF9F6] hover:text-[#AEBED9] transition-colors text-sm lg:text-base"
-            >
-              {t.nav.contact}
-            </Link>
-            <LanguageSwitcher />
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
-          
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-[#FAF9F6] hover:text-[#AEBED9] transition-colors"
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
         </div>
 
         {isMenuOpen && (
@@ -76,9 +82,6 @@ const Navbar = () => {
             >
               {t.nav.contact}
             </Link>
-            <div className="px-4">
-              <LanguageSwitcher />
-            </div>
           </div>
         )}
       </div>
